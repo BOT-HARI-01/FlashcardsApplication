@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements FlashcardAdapter.
     private List<Flashcard> flashcards;
     private FlashcardAdapter adapter;
     private FlashcardDbHelper dbHelper;
+
     protected int position;
 
     @Override
