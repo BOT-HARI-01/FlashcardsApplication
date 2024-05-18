@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--Recyclers View . It is used to store the large amount of data in the form of a list.-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewflashcards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/addFlashcardButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <!--Add Flashcard Button. It is used to add a new flashcard to the list.-->
+    <!--Usage in Main activity. java Triggers the creation of the new flashCard following the navigation to
+    the activity_edit . java through the intent from the line 51 to 72 in 'MainActivity.java' -->
+    <Button
+        android:id="@+id/addFlashcardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#3143A5"
+        android:backgroundTintMode="screen"
+        android:text="Add flashcard"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</RelativeLayout>
